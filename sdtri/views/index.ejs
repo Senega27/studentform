@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title> student form</title>
+<!--<link href="https://fonts.googleapis.com/css?family=Lato:100"     rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">-->
+    <style>
+        body {
+          background-image: url('https://friday.app/p/bad-work-habits');
+        }
+        </style>
+  </head>
+ 
+  <body>
+    <font size = "6">
+    <marquee class="marq" bgcolor="pink"><b>REGISTERATION FORM</b></marquee></font>
+</div>
+<center>
+  <div class="container mt-4">
+    <div class="card" style="width: 18rem;">             
+        <div class="card-body">
+            <form action="/submit" method="POST"><br>
+                <div class="mb-4">
+                    <label for="name-reg" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name-reg" name="name" placeholder="Name">                     
+                </div>
+                <div class="mb-4">
+                    <label for="email-reg" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email-reg" name="email" placeholder="email"> 
+                                         
+                </div>
+                <div class="mb-4">
+                    <label for="password-reg" class="form-label">Phone number</label>
+                    <input type="number" class="form-control" id="number" name="number" placeholder="phone number">
+                </div>
+                <div class="mb-4">
+                    <label for="password-conf-reg" class="form-label">blood group</label>
+                    <input type="text" class="form-control" id="blood" name="blood" placeholder="blood group">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">submit</button>
+                <h2> <center>YOUR APPLICATION</center></h2>
+                  <b>
+                  <% for( var i = 0; i < task.length ; i++)
+                  { %>
+                         <!--<%= task[i] %> -->
+                    
+                    <% } %> 
+                </b>
+                <table>
+                    <tr>
+                        <td> Name:</td>
+                        <td><%= task[0] %></td>
+                    </tr>
+                    <tr>
+                      <td>Email:</td>
+                      <td><%= task[1] %></td>
+                    </tr>
+                    <tr>
+                      <td>Phonenumber:</td>
+                      <td><%= task[2] %></td>
+                      </tr>
+                      <tr>
+                      <td>Blood group:</td>
+                      <td><%= task[3] %></td>
+
+                    </tr>
+                  </table>
+               
+            </form>
+                       
+        </div>
+    </div>
+</div>
+</center>
+</div>
+</body>
+</html>
